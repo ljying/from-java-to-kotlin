@@ -416,16 +416,12 @@ public class Developer {
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result;
-        return result;
+        return name != null ? name.hashCode() : 0;     
     }
 
     @Override
     public String toString() {
-        return "Developer{" +
-                "name='" + name + 
-                '}';
+        return "Developer{" +"name='" + name +'}';
     }
 }
 ```
