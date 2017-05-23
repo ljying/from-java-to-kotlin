@@ -192,16 +192,7 @@ switch (score) {
  case 6:
   grade = "Good";
   break;
- case 5:
- case 4:
-  grade = "Ok";
-  break;
- case 3:
- case 2:
- case 1:
-  grade = "Fail";
-  break;
- default:
+  default:
      grade = "Fail";    
 }
 ```
@@ -213,8 +204,6 @@ var score = // some score
 var grade = when (score) {
  9, 10 -> "Excellent" 
  in 6..8 -> "Good"
- 4, 5 -> "Ok"
- in 1..3 -> "Fail"
  else -> "Fail"
 }
 ```
